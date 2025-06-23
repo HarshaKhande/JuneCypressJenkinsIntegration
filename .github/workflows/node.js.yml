@@ -26,11 +26,9 @@ jobs:
         run: npx cypress verify
 
       - name: Run Cypress tests
-        run: npx cypress run --project JuneCypressJenkinsIntegration
-
+        run: npx cypress run
       - name: Upload Cypress screenshots
-        if: always()
-        continue-on-error: true
+        if: failure()
         uses: actions/upload-artifact@v4
         with:
           name: cypress-screenshots
