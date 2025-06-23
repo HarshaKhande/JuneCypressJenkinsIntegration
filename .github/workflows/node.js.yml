@@ -26,7 +26,7 @@ jobs:
         run: npx cypress verify
 
       - name: Run Cypress tests
-        run: npx cypress run
+        run: npx cypress run --project JuneCypressJenkinsIntegration
 
       - name: Upload Cypress screenshots
         if: always()
