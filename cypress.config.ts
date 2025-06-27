@@ -3,6 +3,11 @@ import createBundler from '@bahmutov/cypress-esbuild-preprocessor'
 import { addCucumberPreprocessorPlugin } from '@badeball/cypress-cucumber-preprocessor'
 import createEsbuildPlugin from '@badeball/cypress-cucumber-preprocessor/esbuild'
 
+module.exports = defineConfig({
+  projectId: "oasg4j",
+  retries: {
+    runMode: 2,
+  },
 async function setupNodeEvents(
     on: Cypress.PluginEvents,
     config: Cypress.PluginConfigOptions
@@ -19,11 +24,6 @@ async function setupNodeEvents(
     return config
 }
 
-module.exports = defineConfig({
-  projectId: "oasg4j",
-  retries: {
-    runMode: 2,
-  },
 
 export default defineConfig({
     e2e: {
