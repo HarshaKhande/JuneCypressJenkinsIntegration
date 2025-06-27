@@ -23,6 +23,7 @@ async function setupNodeEvents(
 
 export default defineConfig({
     e2e: {
+        projectId: 'oasg4j',
         specPattern: '**/*.feature',
         setupNodeEvents,
     },
