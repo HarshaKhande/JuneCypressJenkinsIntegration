@@ -8,6 +8,7 @@ module.exports = defineConfig({
   retries: {
     runMode: 2,
   },
+})
 async function setupNodeEvents(
     on: Cypress.PluginEvents,
     config: Cypress.PluginConfigOptions
