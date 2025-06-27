@@ -19,6 +19,12 @@ async function setupNodeEvents(
     return config
 }
 
+module.exports = defineConfig({
+  projectId: "oasg4j",
+  retries: {
+    runMode: 2,
+  },
+
 export default defineConfig({
     e2e: {
         specPattern: '**/*.feature',
