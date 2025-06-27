@@ -26,7 +26,7 @@ jobs:
         run: npx cypress verify
 
       - name: Run Cypress tests
-        run: npx cypress run
+        run: npx cypress run --record --key 4a0d1794-a478-4ed1-945d-017ee76def05
       - name: Upload Cypress screenshots
         if: failure()
         uses: actions/upload-artifact@v4
