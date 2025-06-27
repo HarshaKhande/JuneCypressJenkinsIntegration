@@ -1,5 +1,5 @@
 @duckduckgo
-Feature: Search engine on the Duckduckgo website
+Feature: Search engine on the Duckduckgo website for god sake 
 
   Scenario:
     Given I go to the Duckduckgo page
